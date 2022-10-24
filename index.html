@@ -356,7 +356,6 @@
           </ul>
         </div>
       </section>
-
       <section class="section">
         <div class="container">
           <h2 class="clients-heading">Постійні клієнти</h2>
@@ -481,6 +480,15 @@
               </li>
             </ul>
           </div>
+          <div class="form">
+            <h3 class="email-input-title">Підпишіться на розсилку</h3>
+            <form name="email_form" autocomplete="on" novalidate>
+              <label>
+                <input class="email-input" type="email" name="email" placeholder="E-mail" />
+              </label>
+              <button class="btn-footer" type="submit">Підписатися</button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -491,6 +499,31 @@
             <use href="./img/icon.svg#icon-close"></use>
           </svg>
         </button>
+        <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+        <div class="modal-field">
+          <label for="user-name" class="modal-field-name">І'мя</label>
+          <input type="text" class="modal-field-input" id="user-name" />
+        </div>
+        <div class="modal-field">
+          <label for="user-tel" class="modal-field-name">Телефон</label>
+          <input type="tel" class="modal-field-input" id="user-tel" />
+        </div>
+        <div class="modal-field">
+          <label for="user-email" class="modal-field-name">Пошта</label>
+          <input type="email" class="modal-field-input" id="user-email" />
+        </div>
+
+        <form name="signup_form" autocomplete="on" novalidate>
+          <label>
+            Email
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" />
+          </label>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
