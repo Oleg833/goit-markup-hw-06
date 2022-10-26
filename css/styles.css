@@ -456,6 +456,7 @@ img {
 .parrent-adress {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .social-links {
   margin-left: 70px;
@@ -559,20 +560,13 @@ img {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   margin-bottom: 20px;
 }
 .email-input {
   width: 358px;
   height: 50px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  /* identical to box height, or 125% */
-  /* display: flex;
-  align-items: center; */
   letter-spacing: 0.03em;
   color:  rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -581,27 +575,6 @@ img {
   padding: 15px 16px;
   margin-right: 12px;
 }
-/* .btn {
-  border: transparent solid 1px;
-  border-radius: 4px;
-  font-family: inherit;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(.4, 0, .2, 1),
-    color 250ms cubic-bezier(.4, 0, .2, 1),
-    box-shadow 250ms cubic-bezier(.4, 0, .2, 1);
-}
-.btn-studio {
-  color: var(--primary-white-color);
-  background: var(--hover-and-focus-color);
-  min-width: 216px;
-  height: 50px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-} */
 .btn-footer {
   min-width: 200px;
   display: inline-flex;
