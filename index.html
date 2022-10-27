@@ -507,27 +507,41 @@
         <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
         <div class="modal-field">
           <label for="user-name" class="modal-field-name">І'мя</label>
-          <input type="text" class="modal-field-input" id="user-name" />
+          <input name="user-name" type="text" class="modal-field-input" id="user-name" />
         </div>
         <div class="modal-field">
           <label for="user-tel" class="modal-field-name">Телефон</label>
-          <input type="tel" class="modal-field-input" id="user-tel" />
+          <input name="user-tel" type="tel" class="modal-field-input" id="user-tel" />
         </div>
         <div class="modal-field">
           <label for="user-email" class="modal-field-name">Пошта</label>
-          <input type="email" class="modal-field-input" id="user-email" />
+          <input name="user-email" type="email" class="modal-field-input" id="user-email" />
         </div>
 
-        <form name="signup_form" autocomplete="on" novalidate>
-          <label>
-            Email
-            <input type="email" name="email" />
+        <form name="contact-form" class="contact-form" autocomplete="on" novalidate>
+          <label for="user-name" class="form-label"
+            >І'мя
+            <input
+              name="user-name"
+              type="text"
+              class="person-name"
+              id="user-name"
+              required
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+              title="Username must be two words separated by space."
+            />
           </label>
-          <label>
-            Password
-            <input type="password" name="password" />
+          <label for="tel" class="form-label"
+            >Телефон
+            <input name="tel" type="tel" class="person-tel" id="tel" />
           </label>
-          <button type="submit">Відправити</button>
+          <label for="email" class="form-label"
+            >Пошта
+            <input name="email" type="text" class="person-n" id="email" />
+          </label>
+          <label for="coments" class="form-label">Коментар </label>
+
+          <button class="btn btn-studio btn-modal-send" type="submit">Відправити</button>
         </form>
       </div>
     </div>

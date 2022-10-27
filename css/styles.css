@@ -6,6 +6,7 @@
   --accent-text-color: #757575;
   --accent-bgd-color: #2F303A;
   --social-links-color: #afb1b8;
+  --btn-hover-color: #188CE8;
 }
 body {
   margin: 0;
@@ -173,7 +174,7 @@ img {
 .btn-studio:hover,
 .btn-studio:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: #188ce8;
+  background-color: var(--btn-hover-color);
 }
 .btn-portfolio {
   color: var(--primary-text-color);
@@ -587,7 +588,50 @@ img {
   fill: var(--primary-white-color);
 }
 
+.form-label {
+  display: block;
+}
+.btn-modal-send {
+  position: absolute;
+  color: var(--primary-white-color);
+  min-width: 200px;
+  text-align: center;
+  font-weight: 700;
+  /* display: flex;
+  align-items: center; */  
+}
+.btn-modal-send:hover,
+.btn-modal-send:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--btn-hover-color);
+}
 
+/* .btn {
+  border: transparent solid 1px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(.4, 0, .2, 1),
+    color 250ms cubic-bezier(.4, 0, .2, 1),
+    box-shadow 250ms cubic-bezier(.4, 0, .2, 1);
+}
+.btn-studio {
+  color: var(--primary-white-color);
+  background: var(--hover-and-focus-color);
+  min-width: 216px;
+  height: 50px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.btn-studio:hover,
+.btn-studio:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: #188ce8;
+} */
 
 
 
