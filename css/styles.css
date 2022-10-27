@@ -270,7 +270,7 @@ img {
   align-items: center;
 }
 .comand-card {
-  background-color: #F5F4FA;
+  background-color: var(--button-no-active);
 }
 .comand-card-heading {
   margin-bottom: 50px;
@@ -467,7 +467,6 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -529,7 +528,8 @@ img {
   background-color: var(--primary-white-color);
   transition: transform 250ms cubic-bezier(.4, 0, .2, 1),
    box-shadow 250ms cubic-bezier(.4, 0, .2, 1),
-   opacity 250ms cubic-bezier(.4, 0, .2, 1);   
+   opacity 250ms cubic-bezier(.4, 0, .2, 1);
+   padding: 40px 40px;
 }
 .close-btn {
   position: absolute;
@@ -568,7 +568,6 @@ img {
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
   color:  rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -587,12 +586,41 @@ img {
 .footer-icon-svg {
   fill: var(--primary-white-color);
 }
-
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 12px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 .form-label {
-  display: block;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+.person-n {
+  /* position: absolute; */
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 .btn-modal-send {
-  position: absolute;
+  /* position: absolute; */
   color: var(--primary-white-color);
   min-width: 200px;
   text-align: center;
@@ -605,6 +633,21 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--btn-hover-color);
 }
+.contact-form-svg {
+  position: absolute;
+  display: inline-flex;
+  fill: var(--primary-text-color);
+  top: 50%;
+  margin: 11px 12px;
+}
+/* input,
+textarea {
+  padding: 8px;
+  font-family: inherit;
+  font-size: inherit;
+} */
+
+
 
 /* .btn {
   border: transparent solid 1px;
