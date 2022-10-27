@@ -527,29 +527,35 @@
             <svg class="contact-form-svg" width="18" height="18">
               <use href="./img/icon.svg#icon-phone"></use>
             </svg>
-            <input name="tel" type="tel" class="person-n" id="tel" />
+            <input name="tel" type="tel" class="person-n" id="tel" required />
           </label>
           <label for="email" class="form-label"
             >Пошта
             <svg class="contact-form-svg" width="18" height="18">
               <use href="./img/icon.svg#icon-email"></use>
             </svg>
-            <input name="email" type="text" class="person-n" id="email" />
+            <input name="email" type="text" class="person-n" id="email" required />
           </label>
           <label for="coments" class="form-label">Коментар </label>
           <textarea
             class="person-n"
             name="feedback"
             rows="5"
-            cols="5"
             placeholder="Type your message here..."
             id="coments"
           ></textarea>
           <label for="checkbox" class="checkbox">
             <svg class="contact-form-svg" width="18" height="18">
-              <use href="./img/icon.svg#icon-email"></use>
+              <use href="./img/icon.svg#icon-checkbox"></use>
             </svg>
-            <input class="checkbox" name="checkbox" type="checkbox" value="reading" id="checkbox" />
+            <input
+              class="checkbox"
+              name="checkbox"
+              type="checkbox"
+              value="reading"
+              id="checkbox"
+              required
+            />
             Погоджуюся з розсилкою та приймаю
             <a class="checkbox checkbox-link" href="#">Умови договору</a>
           </label>
