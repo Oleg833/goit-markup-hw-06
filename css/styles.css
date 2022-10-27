@@ -614,8 +614,9 @@ img {
 }
 .person-n {
   /* position: absolute; */
-  width: 448px;
-  height: 40px;
+  /* width: 448px;
+  height: 40px; */
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -640,6 +641,18 @@ img {
   top: 50%;
   margin: 11px 12px;
 }
+.checkbox {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--accent-text-color);
+}
+.checkbox-link {
+  color: var(--hover-and-focus-color);
+  /* font-size: inherit; */
+}
 /* input,
 textarea {
   padding: 8px;
@@ -647,34 +660,6 @@ textarea {
   font-size: inherit;
 } */
 
-
-
-/* .btn {
-  border: transparent solid 1px;
-  border-radius: 4px;
-  font-family: inherit;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(.4, 0, .2, 1),
-    color 250ms cubic-bezier(.4, 0, .2, 1),
-    box-shadow 250ms cubic-bezier(.4, 0, .2, 1);
-}
-.btn-studio {
-  color: var(--primary-white-color);
-  background: var(--hover-and-focus-color);
-  min-width: 216px;
-  height: 50px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.btn-studio:hover,
-.btn-studio:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: #188ce8;
-} */
 
 
 
