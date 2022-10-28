@@ -541,28 +541,32 @@
             </svg>
             <input name="email" type="text" class="form-input" id="email" required />
           </label>
-          <label for="coments" class="form-label">Коментар </label>
-          <textarea
-            class="form-input"
-            name="feedback"
-            rows="5"
-            placeholder="Type your message here..."
-            id="coments"
-          ></textarea>
+          <label for="coments" class="form-label"
+            >Коментар
+            <textarea
+              class="form-input"
+              name="feedback"
+              rows="5"
+              placeholder="Type your message here..."
+              id="coments"
+            ></textarea>
+          </label>
           <label for="checkbox" class="checkbox-label">
-            <svg class="checkbox-form-svg" width="16" height="15">
-              <use href="./img/icon.svg#icon-checkbox"></use>
-            </svg>
-            <input
-              class="checkbox"
-              name="checkbox"
-              type="checkbox"
-              value="reading"
-              id="checkbox"
-              required
-            />
-            Погоджуюся з розсилкою та приймаю
-            <a class="checkbox checkbox-link" href="#">Умови договору</a>
+            <div class="form-control">
+              <svg class="checkbox-form-svg" width="16" height="15">
+                <use href="./img/icon.svg#icon-checkbox"></use>
+              </svg>
+              <input
+                class="checkbox-input"
+                name="checkbox"
+                type="checkbox"
+                value="reading"
+                id="checkbox"
+                required
+              />
+              Погоджуюся з розсилкою та приймаю
+              <a class="checkbox checkbox-link" href="#">Умови договору</a>
+            </div>
           </label>
           <button class="btn btn-studio btn-modal-send" type="submit">Відправити</button>
         </form>
