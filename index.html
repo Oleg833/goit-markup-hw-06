@@ -512,62 +512,60 @@
         </button>
         <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
         <form name="person-form" class="person-form" autocomplete="on">
-          <label for="user-name" class="form-label">І'мя</label>
+          <label for="person-name" class="form-label">І'мя</label>
           <div class="form-control">
-            <svg class="person-form-svg" width="18" height="18">
+            <svg class="form-icon" width="18" height="18">
               <use href="./img/icon.svg#icon-person"></use>
             </svg>
             <input
-              name="user-name"
+              name="person-name"
               type="text"
               class="form-input"
-              id="user-name"
+              id="person-name"
               required
               pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-              title="Username must be two words separated by space."
+              title="Personname must be two words separated by space."
             />
           </div>
           <label for="tel" class="form-label">Телефон</label>
           <div class="form-control">
-            <svg class="person-form-svg" width="18" height="18">
+            <svg class="form-icon" width="18" height="18">
               <use href="./img/icon.svg#icon-phone"></use>
             </svg>
             <input name="tel" type="tel" class="form-input" id="tel" required />
           </div>
           <label for="email" class="form-label">Пошта</label>
           <div class="form-control">
-            <svg class="person-form-svg" width="18" height="18">
+            <svg class="form-icon" width="18" height="18">
               <use href="./img/icon.svg#icon-email"></use>
             </svg>
             <input name="email" type="text" class="form-input" id="email" required />
           </div>
-          <label for="coments" class="form-label">Коментар</label>
-          <div class="form-control">
+          <label for="feedback" class="form-label">Коментар</label>
+          <div class="form-control-textarea">
             <textarea
               class="textarea form-input"
               name="feedback"
               rows="5"
-              placeholder="Type your message here..."
-              id="coments"
-            >
-            </textarea>
+              placeholder="Введіть текст"
+              id="feedback"
+            ></textarea>
           </div>
-          <label for="checkbox" class="checkbox-label"
-            >Погоджуюся з розсилкою та приймаю
-            <a href="#" class="checkbox checkbox-link">Умови договору</a>
-          </label>
-          <div class="form-control">
-            <svg class="checkbox-form-svg" width="16" height="15">
-              <use href="./img/icon.svg#icon-checkbox"></use>
-            </svg>
-            <input
-              class="checkbox-input"
-              name="checkbox"
-              type="checkbox"
-              value="reading"
-              id="checkbox"
-              required
-            />
+          <div class="form-control-checkbox">
+            <label for="checkbox" class="checkbox-label"
+              ><svg class="icon-checkbox" width="16" height="15">
+                <use href="./img/icon.svg#icon-checkbox"></use>
+              </svg>
+              <input
+                class="checkbox-input"
+                name="checkbox"
+                type="checkbox"
+                value="reading"
+                id="checkbox"
+                required
+              />Погоджуюся з розсилкою та приймаю
+              <a href="#" class="checkbox checkbox-link">Умови договору</a>
+            </label>
           </div>
           <button class="btn btn-studio btn-modal-send" type="submit">Відправити</button>
         </form>
