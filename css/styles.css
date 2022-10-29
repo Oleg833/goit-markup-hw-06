@@ -565,6 +565,10 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+.email-label {
+  display: inline-block;
+  margin-right: 12px;
+}
 .email-input {
   min-width: 358px;
   height: 50px;
@@ -575,16 +579,16 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 16px;
-  margin-right: 12px;
-  background-color: transparent;
+    /* background-color: transparent; */
+  background-color: inherit;
 }
 .btn-footer {
   min-width: 200px;
   display: inline-flex;
   align-items: center;
-  text-align: center;
-  gap: 10px;
+  text-align: center;  
   padding: 10px 28px;
+  gap: 10px;
 }
 .footer-icon-svg {
   fill: var(--primary-white-color);
