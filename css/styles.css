@@ -620,7 +620,7 @@ img {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: none;
+  outline-color: var(--hover-and-focus-color);
   transition: border-color 250ms cubic-bezier(.4, 0, .2, 1);
   padding: 11px 12px 11px 42px;
 }
