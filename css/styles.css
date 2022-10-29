@@ -548,6 +548,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: fill 250ms cubic-bezier(.4, 0, .2, 1);
 }
 .close-btn:hover .close-button-icon,
 .close-btn:focus .close-button-icon{
@@ -558,12 +559,9 @@ img {
 }
 .email-input-title {
   color: var(--primary-white-color);
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -607,9 +605,7 @@ img {
   margin-bottom: 10px;
 }
 .form-label {  
-  /* display: flex;
-  flex-direction: column;
-  gap: 4px; */
+  display: block;
   color: var(--accent-text-color);
   font-size: 12px;
   line-height: 1.17;
@@ -659,61 +655,43 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  /* justify-content: center; */
   margin-bottom: 30px;
 }
 .checkbox-link {
   color: var(--hover-and-focus-color);
 }
 .checkbox-label {
-  /* position: relative; */
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--accent-text-color);
+  padding-left: 32px;
+}
+.checkbox-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #000000;
 }
 .icon-checkbox {
   position: absolute;
-  /* display: inline-flex; */
+  fill: var(--primary-white-color);
   top: 50%;
+  left: 10px;
   transform: translateY(-50%);
-  /* fill: var(--primary-white-color); */
-  fill: white;
-  /* background-color: red; */
-  border: solid 1px var(--hover-and-focus-color);
+  border: solid 2px var(--primary-text-color);
   border-radius: 2px;
-  z-index: 2;
+  z-index: -1;
 }
-.checkbox-input:checked + .icon-checkbox {
-  fill: var(--hover-and-focus-color);
-    background-color: #188CE8;
+.checkbox-input:checked ~ .icon-checkbox {
+  background-color: var(--hover-and-focus-color);
+  fill: var(--primary-white-color);
 }
 .btn-modal-send {
   display: block;
   max-width: 200px;
 margin: 0 auto;
 }
-
-/* input,
-textarea {
-  padding: 8px;
-  font-family: inherit;
-  font-size: inherit;
-} */
-/* .btn-modal-send:hover,
-.btn-modal-send:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--btn-hover-color);
-} */
-/* .btn-footer:hover,
-.btn-footer:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--btn-hover-color);
-} */
-
 
 
 
