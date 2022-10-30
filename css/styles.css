@@ -594,6 +594,7 @@ img {
   fill: var(--primary-white-color);
 }
 .modal-title {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -633,9 +634,6 @@ img {
 }
 .form-icon {
   position: absolute;
-  /* display: inline-flex;
-  align-items: center;
-  text-align: center; */
   fill: var(--primary-text-color);
   top: 50%;
   transform: translateY(-50%);
@@ -686,10 +684,14 @@ img {
   border: solid 2px var(--primary-text-color);
   border-radius: 2px;
   z-index: -1;
+  transition: border-color 250ms cubic-bezier(.4, 0, .2, 1),
+  background-color 250ms cubic-bezier(.4, 0, .2, 1);
 }
 .checkbox-input:checked ~ .icon-checkbox {
   background-color: var(--hover-and-focus-color);
-  fill: var(--primary-white-color);
+}
+.checkbox-input:focus ~ .icon-checkbox {
+ border-color: var(--hover-and-focus-color); 
 }
 .btn-modal-send {
   display: block;
