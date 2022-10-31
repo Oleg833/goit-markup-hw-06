@@ -672,14 +672,13 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--accent-text-color);
-  /* padding-left: 32px; */
-  margin-left: 12px;
+  padding-left: 23px;
+  /* margin-left: 12px; */
 }
 .checkbox-input {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  color: #000000;
 }
 .icon-checkbox {
   /* position: absolute; */
@@ -692,6 +691,7 @@ img {
   z-index: -1;
   transition: border-color 250ms cubic-bezier(.4, 0, .2, 1),
   background-color 250ms cubic-bezier(.4, 0, .2, 1);
+  margin-right: -16px;
 }
 .checkbox-input:checked ~ .icon-checkbox {
   background-color: var(--hover-and-focus-color);
