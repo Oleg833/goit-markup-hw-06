@@ -457,7 +457,10 @@ img {
 .parrent-adress {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+.adress-content {
+  flex-grow: 1;
 }
 .social-links {
   margin-left: 70px;
@@ -558,6 +561,7 @@ img {
   margin-left: 93px;
 }
 .email-input-title {
+  display: block;
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 14px;
@@ -644,6 +648,7 @@ img {
   margin-bottom: 20px;
 }
 .textarea {
+  display: block;
   resize: none;
   padding: 11px 12px;
 }
@@ -657,7 +662,7 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   margin-bottom: 30px;
 }
 .checkbox-link {
@@ -667,7 +672,8 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--accent-text-color);
-  padding-left: 32px;
+  /* padding-left: 32px; */
+  margin-left: 12px;
 }
 .checkbox-input {
   appearance: none;
@@ -676,13 +682,13 @@ img {
   color: #000000;
 }
 .icon-checkbox {
-  position: absolute;
+  /* position: absolute; */
   fill: var(--primary-white-color);
-  top: 50%;
+  /* top: 50%;
   left: 10px;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
   border: solid 2px var(--primary-text-color);
-  border-radius: 2px;
+  border-radius: 3px;
   z-index: -1;
   transition: border-color 250ms cubic-bezier(.4, 0, .2, 1),
   background-color 250ms cubic-bezier(.4, 0, .2, 1);
