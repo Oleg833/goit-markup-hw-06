@@ -552,19 +552,20 @@
             ></textarea>
           </div>
           <div class="form-control-checkbox">
-            <input
-              class="checkbox-input visually-hidden"
-              name="checkbox"
-              type="checkbox"
-              id="checkbox"
-              required
-            />
-            <svg class="icon-checkbox" width="16" height="15">
-              <use href="./img/icon.svg#icon-checkbox"></use>
-            </svg>
-            <label for="checkbox" class="checkbox-label"
-              >Погоджуюся з розсилкою та приймаю
-              <a href="#" class="checkbox checkbox-link">Умови договору</a>
+            <label for="checkbox" class="checkbox-label">
+              <input
+                class="checkbox-input visually-hidden"
+                name="checkbox"
+                type="checkbox"
+                id="checkbox"
+                value="agree"
+                required
+              />
+              <svg class="icon-checkbox" width="16" height="15">
+                <use href="./img/icon.svg#icon-checkbox"></use>
+              </svg>
+              Погоджуюся з розсилкою та приймаю &nbsp
+              <a href="#" class="checkbox-agreement-link">Умови договору</a>
             </label>
           </div>
           <button class="btn btn-studio btn-modal-send" type="submit">Відправити</button>

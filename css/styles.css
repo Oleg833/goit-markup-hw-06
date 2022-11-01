@@ -665,15 +665,16 @@ img {
   justify-content: center;
   margin-bottom: 30px;
 }
-.checkbox-link {
+.checkbox-agreement-link {
   color: var(--hover-and-focus-color);
 }
 .checkbox-label {
-  font-size: 14px;
-  line-height: 1.71;
   color: var(--accent-text-color);
-  padding-left: 23px;
-  /* margin-left: 12px; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.71;  
 }
 .checkbox-input {
   appearance: none;
@@ -681,24 +682,37 @@ img {
   -moz-appearance: none;
 }
 .icon-checkbox {
-  /* position: absolute; */
   fill: var(--primary-white-color);
-  /* top: 50%;
-  left: 10px;
-  transform: translateY(-50%); */
   border: solid 2px var(--primary-text-color);
   border-radius: 3px;
   z-index: -1;
   transition: border-color 250ms cubic-bezier(.4, 0, .2, 1),
   background-color 250ms cubic-bezier(.4, 0, .2, 1);
-  margin-right: -16px;
+  margin-right: 7px;
 }
-.checkbox-input:checked ~ .icon-checkbox {
+.checkbox-input:focus~.icon-checkbox {
+  border-color: var(--hover-and-focus-color);
+}
+.checkbox-input:checked + .icon-checkbox {
+  background-color: var(--hover-and-focus-color);
+  border: none;
+}
+.checkbox-input-test {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.checkbox-input-test:checked~.icon-checkbox-test {
   background-color: var(--hover-and-focus-color);
 }
-.checkbox-input:focus ~ .icon-checkbox {
- border-color: var(--hover-and-focus-color); 
+
+.checkbox-form:checked+.icon-check-in {
+  background-color: var(--hover-and-focus-color);
 }
+.checkbox-form-test:checked+.icon-check-in-test {
+  background-color: var(--hover-and-focus-color);
+}
+
 .btn-modal-send {
   display: block;
   max-width: 200px;
