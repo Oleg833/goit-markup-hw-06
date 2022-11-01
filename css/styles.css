@@ -525,7 +525,6 @@ img {
   left: 50%;
   transform: scale(1) translate(-50%, -50%);
   width: 528px;
-  /* height: 581px; */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--primary-white-color);
@@ -583,7 +582,6 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 16px;
-    /* background-color: transparent; */
   background-color: inherit;
 }
 .btn-footer {
@@ -697,22 +695,6 @@ img {
   background-color: var(--hover-and-focus-color);
   border: none;
 }
-.checkbox-input-test {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-.checkbox-input-test:checked~.icon-checkbox-test {
-  background-color: var(--hover-and-focus-color);
-}
-
-.checkbox-form:checked+.icon-check-in {
-  background-color: var(--hover-and-focus-color);
-}
-.checkbox-form-test:checked+.icon-check-in-test {
-  background-color: var(--hover-and-focus-color);
-}
-
 .btn-modal-send {
   display: block;
   max-width: 200px;
